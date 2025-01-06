@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>Register - Matrimony</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to Matrimony</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <section class="hero">
+    <h1>Find Your Perfect Match</h1>
+    <p>Connecting hearts, one profile at a time.</p>
+    <a href="register.html" class="btn">Join Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Matrimony.com | All rights reserved.</p>
+  </footer>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #198781;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container, .search-container, .contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,)
+}
+
+  </style>
+</body>
+</html>
+
+
+  <section class="form-container">
+    <h1>Register Your Profile</h1>
+    <form action="submit_profile.php" method="POST">
+      <label for="name">Full Name</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="gender">Gender</label><br>
+      <select id="gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option><br>
+      </select><br>
+
+      <label for="age">Age</label><br>
+      <input type="number" id="age" name="age" min="18" required><br>
+
+      <label for="religion">Religion</label><br>
+      <input type="text" id="religion" name="religion" required><br>
+
+      <label for="profile_picture">Profile Picture</label><br>
+      <input type="file" id="profile_picture" name="profile_picture"><br><br>
+      <section>
+        <a href="search.html"  type="submit" class="btn">Submit</a>
+       </section>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Matrimony.com | All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Search Profiles - Matrimony</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="search-container">
+    <h1>Search Profiles</h1>
+    <form>
+      <label for="age-range">Age Range</label><br>
+      <input type="text" id="age-range" name="age_range"><br>
+
+      <label for="religion-search">Religion</label><br>
+      <input type="text" id="religion-search" name="religion"><br>
+
+      <label for="location-search">Location</label><br>
+      <input type="text" id="location-search" name="location"><br>
+
+      <button type="submit" class="btn">Search</button>
+    </form>
+
+    <div class="profile-results">
+      <h2>Profile Results:</h2>
+      <!-- This section will show search results dynamically with backend -->
+      <div class="profile">
+        <img src="C:\Users\Muhammed Jeseem\Documents\add\project\leo.jpeg" alt="Profile 1" height="80px" width="80px">
+        <h3>Leo Das</h3><br>
+        <p>Age: 30 | Religion: Hindu</p>
+        <a href="www.instagram.com" class="btn">View Profile</a>
+      </div>
+      <div class="profile">
+        <img src="C:\Users\Muhammed Jeseem\Documents\add\project\ajith.webp" alt="Profile 2" height="80px" width="90px">
+        <h3>Billa</h3>
+        <p>Age: 28 | Religion: Christian</p>
+        <a href="profile.html?id=2" class="btn">View Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Matrimony.com | All rights reserved.</p>
+  </footer>
+  <style>
+    body{
+    background-color:rgb(204, 149, 30);
+    }
+  </style>
+</body>
+</html>

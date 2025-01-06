@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:URL(mahi.AVIF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            display: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div>
+                <input type="text" id="username" placeholder="Username" />
+                <div id="usernameError" class="error-message">Username is required!</div>
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Password" />
+                <div id="passwordError" class="error-message">Password is required!</div>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            // Get form inputs
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            
+            // Hide previous error messages
+            document.getElementById('usernameError').style.display = 'none';
+            document.getElementById('passwordError').style.display = 'none';
+
+            let isValid = true;
+
+            // Validate username
+            if (username === "") {
+                document.getElementById('usernameError').style.display = 'block';
+                isValid = false;
+            }
+
+            // Validate password
+            if (password === "") {
+                document.getElementById('passwordError').style.display = 'block';
+                isValid = false;
+            }
+
+            return isValid; // Return false to prevent form submission if invalid
+        }
+    </script>
+
+</body>
+</html>
